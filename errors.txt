@@ -21,8 +21,6 @@ node:url
 ./node_modules/tough-cookie/dist/cookie/index.js
 ./node_modules/fetch-cookie/esm/index.js
 ./node_modules/starknet/dist/index.mjs
-./lib/services/starknet-trading.ts
-./app/admin/page.tsx
 
 
 > Build failed because of webpack errors

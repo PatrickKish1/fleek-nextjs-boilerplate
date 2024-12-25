@@ -7,7 +7,7 @@ import { mainnet, arbitrum, polygon, base } from '@reown/appkit/networks';
 import { Button } from '@/components/ui/button';
 
 // Environment variables
-const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
+const projectId = process.env.NEXT_PRIVATE_PROJECT_ID;
 const appName = process.env.NEXT_PRIVATE_APP_NAME || 'PULSE TRADE AI';
 
 if (!projectId) {

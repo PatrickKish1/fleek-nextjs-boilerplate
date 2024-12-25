@@ -35,8 +35,8 @@ export default function PropFirmPanel() {
 
     try {
       const starkNetService = createStarkNetTradingService(
-        process.env.NEXT_PUBLIC_STARKNET_CONTRACT_ADDRESS!,
-        process.env.NEXT_PUBLIC_STARKNET_PROVIDER_URL!
+        process.env.NEXT_PRIVATE_STARKNET_CONTRACT_ADDRESS!,
+        process.env.NEXT_PRIVATE_STARKNET_PROVIDER_URL!
       );
       await starkNetService.initializeContract(address);
 
@@ -70,8 +70,8 @@ export default function PropFirmPanel() {
     setIsLoading(true);
     try {
       const starkNetService = createStarkNetTradingService(
-        process.env.NEXT_PUBLIC_STARKNET_CONTRACT_ADDRESS!,
-        process.env.NEXT_PUBLIC_STARKNET_PROVIDER_URL!
+        process.env.NEXT_PRIVATE_STARKNET_CONTRACT_ADDRESS!,
+        process.env.NEXT_PRIVATE_STARKNET_PROVIDER_URL!
       );
       await starkNetService.initializeContract(address);
 
@@ -122,8 +122,8 @@ export default function PropFirmPanel() {
     setIsLoading(true);
     try {
       const starkNetService = createStarkNetTradingService(
-        process.env.NEXT_PUBLIC_STARKNET_CONTRACT_ADDRESS!,
-        process.env.NEXT_PUBLIC_STARKNET_PROVIDER_URL!
+        process.env.NEXT_PRIVATE_STARKNET_CONTRACT_ADDRESS!,
+        process.env.NEXT_PRIVATE_STARKNET_PROVIDER_URL!
       );
       await starkNetService.initializeContract(address);
 

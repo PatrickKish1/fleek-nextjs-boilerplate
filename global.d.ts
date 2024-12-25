@@ -20,6 +20,17 @@ declare global {
   interface Window {
     ethereum: EthereumProvider;
   }
+  const Buffer: typeof import('buffer').Buffer;
+  const process: NodeJS.Process;
+
+  namespace NodeJS {
+    interface Process {
+      browser: boolean;
+    }
+    interface ProcessEnv {
+      NODE_ENV: 'development' | 'production' | 'test';
+    }
+  }
 }
 
 export {};

@@ -1,0 +1,28 @@
+Failed to compile.
+
+node:url
+Module build failed: UnhandledSchemeError: Reading from "node:url" is not handled by plugins (Unhandled scheme).     
+Webpack supports "data:" and "file:" URIs by default.
+You may need an additional plugin to handle "node:" URIs.
+    at %path\node_modules\next\dist\compiled\webpack\bundle5.js:28:401783
+    at Hook.eval [as callAsync] (eval at create (%path\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:6:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (%path\node_modules\next\dist\compiled\webpack\bundle5.js:13:26012)
+    at Object.processResource (%path\node_modules\next\dist\compiled\webpack\bundle5.js:28:401708)
+    at processResource (%path\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:5308)
+    at iteratePitchingLoaders (%path\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:4667)
+    at runLoaders (%path\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:8590)
+    at NormalModule._doBuild (%path\node_modules\next\dist\compiled\webpack\bundle5.js:28:401570)
+    at NormalModule.build (%path\node_modules\next\dist\compiled\webpack\bundle5.js:28:403598)
+    at %path\node_modules\next\dist\compiled\webpack\bundle5.js:28:82055
+
+Import trace for requested module:
+node:url
+./node_modules/tough-cookie/dist/cookie/canonicalDomain.js
+./node_modules/tough-cookie/dist/cookie/index.js
+./node_modules/fetch-cookie/esm/index.js
+./node_modules/starknet/dist/index.mjs
+./lib/services/starknet-trading.ts
+./app/admin/page.tsx
+
+
+> Build failed because of webpack errors

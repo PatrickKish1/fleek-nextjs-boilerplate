@@ -50,7 +50,7 @@ export default function TradeExecutionForm({ subAccountAddress }: TradeExecution
     setIsLoading(true);
     try {
       const ethService = createEthereumTradingService(
-        process.env.NEXT_PRIVATE_ETH_CONTRACT_ADDRESS!
+        process.env.NEXT_PUBLIC_ETH_CONTRACT_ADDRESS!
       );
 
       await ethService.initializeContract(ethereum);
@@ -61,8 +61,8 @@ export default function TradeExecutionForm({ subAccountAddress }: TradeExecution
       });
 
       const starkNetService = createStarkNetTradingService(
-        process.env.NEXT_PRIVATE_STARKNET_CONTRACT_ADDRESS!,
-        process.env.NEXT_PRIVATE_STARKNET_PROVIDER_URL!
+        process.env.NEXT_PUBLIC_STARKNET_CONTRACT_ADDRESS!,
+        process.env.NEXT_PUBLIC_STARKNET_PROVIDER_URL!
       );
       await starkNetService.initializeContract(address);
 
